@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="PERSONAL VISUAL ARCHIVE 的十二项视觉实验总档案，可按分类筛选并切换网格或列表视图。"
+    >
+    <title>VISUAL ARCHIVE｜PERSONAL VISUAL ARCHIVE</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/tokens.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/archive.js" defer></script>
+  </head>
+  <body class="page-archive">
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+    <header class="site-header">
+      <a class="site-brand" href="index.html">
+        <span>PVA</span>
+        <span class="site-brand__index">00—12</span>
+      </a>
+      <nav class="site-nav" aria-label="主要导航">
+        <a href="index.html">HOME</a>
+        <a href="archive.html" aria-current="page">ARCHIVE</a>
+        <a href="index-page.html">INDEX</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <header class="archive-hero page-container">
+        <div>
+          <p class="eyebrow">COMPLETE CATALOGUE · A01—A12</p>
+          <h1>VISUAL<br>ARCHIVE</h1>
+        </div>
+        <div class="archive-intro">
+          <p>
+            档案共收录十二项视觉实验，并按照 TYPE、IMAGE、SYSTEM 和
+            FIELD NOTES 四个类别组织。
+          </p>
+          <p>可按照编号查看，也能切换网格、列表和随机排列方式。</p>
+          <dl class="archive-summary">
+            <div><dt>ENTRIES</dt><dd>012</dd></div>
+            <div><dt>CATEGORIES</dt><dd>004</dd></div>
+            <div><dt>STATUS</dt><dd>ACTIVE</dd></div>
+          </dl>
+        </div>
+      </header>
+
+      <section class="archive-tools page-container" aria-label="档案筛选和视图工具">
+        <div class="tool-group" role="group" aria-label="按分类筛选">
+          <span class="tool-group__label">FILTER</span>
+          <button type="button" data-filter="all" aria-pressed="true">ALL</button>
+          <button type="button" data-filter="type" aria-pressed="false">TYPE</button>
+          <button type="button" data-filter="image" aria-pressed="false">IMAGE</button>
+          <button type="button" data-filter="system" aria-pressed="false">SYSTEM</button>
+          <button type="button" data-filter="field-notes" aria-pressed="false">
+            FIELD NOTES
+          </button>
+        </div>
+
+        <div class="tool-group" role="group" aria-label="视图和排序">
+          <span class="tool-group__label">VIEW / ORDER</span>
+          <button type="button" data-view="grid" aria-pressed="true">GRID</button>
+          <button type="button" data-view="list" aria-pressed="false">LIST</button>
+          <button type="button" data-order="index" aria-pressed="true">INDEX</button>
+          <button type="button" data-order="mix" aria-pressed="false">MIX</button>
+        </div>
+
+        <p id="archive-status" class="archive-status" aria-live="polite">
+          SHOWING 12 / 12 · GRID · INDEX ORDER
+        </p>
+        <noscript>
+          <p class="noscript-note">
+            JavaScript 未启用：当前仍显示完整的 12 项网格，筛选和视图切换暂不可用。
+          </p>
+        </noscript>
+      </section>
+
+      <nav class="collection-links page-container" aria-label="浏览四个分类页面">
+        <a class="collection-link collection-link--type" href="collections/type.html">
+          <span>01</span><strong>TYPE</strong><span>3 ENTRIES →</span>
+        </a>
+        <a class="collection-link collection-link--image" href="collections/image.html">
+          <span>02</span><strong>IMAGE</strong><span>3 ENTRIES →</span>
+        </a>
+        <a class="collection-link collection-link--system" href="collections/system.html">
+          <span>03</span><strong>SYSTEM</strong><span>3 ENTRIES →</span>
+        </a>
+        <a class="collection-link collection-link--field" href="collections/field-notes.html">
+          <span>04</span><strong>FIELD NOTES</strong><span>3 ENTRIES →</span>
+        </a>
+      </nav>
+
+      <section class="archive-content page-container" aria-labelledby="archive-list-title">
+        <h2 id="archive-list-title" class="visually-hidden">十二项视觉实验</h2>
+        <div class="archive-grid" data-archive-grid>
+          <article
+            id="entry-a01"
+            class="archive-card"
+            data-category="type"
+            data-index="1"
+          >
+            <a class="archive-card__link" href="entries/a01-nonhuman-alphabet.html">
+              <div class="archive-card__image">
+                <img
+                  src="assets/images/covers/a01-cover.png"
+                  alt="黑色虚构字符排列在酸性黄色与暖白色网格中"
+                >
+              </div>
+              <div class="archive-card__body">
+                <div class="archive-card__topline">
+                  <span class="archive-card__id">A01</span>
+                  <span class="category-chip category-chip--type">TYPE</span>
+                </div>
+                <h3>NONHUMAN ALPHABET</h3>
+                <p lang="zh-CN">非人字母表</p>
+              </div>
+            </a>
+          </article>
+
+          <article
+            id="entry-a02"
+            class="archive-card"
+            data-category="type"
+            data-index="2"
+          >
+            <a class="archive-card__link" href="entries/a02-broken-caption.html">
+              <div class="archive-card__image">
+                <img
+                  src="assets/images/covers/a02-cover.png"
+                  alt="黑白字幕条被模糊、错位并由黄色线段打断"
+                >
+              </div>
+              <div class="archive-card__body">
+                <div class="archive-card__topline">
+                  <span class="archive-card__id">A02</span>
+                  <span class="category-chip category-chip--type">TYPE</span>
+                </div>
+                <h3>BROKEN CAPTION</h3>
+                <p lang="zh-CN">破损字幕</p>
+              </div>
+            </a>
+          </article>
+
+          <article
+            id="entry-a03"
+            class="archive-card"
+            data-category="type"
+            data-index="3"
+          >
+            <a class="archive-card__link" href="entries/a03-unreadable-weather.html">
+              <div class="archive-card__image">
+                <img
+                  src="assets/images/covers/a03-cover.png"
+                  alt="灰黑云团、等高线和气象轨迹覆盖在暖白色图纸上"
+                >
+              </div>
+              <div class="archive-card__body">
+                <div class="archive-card__topline">
+                  <span class="archive-card__id">A03</span>
+                  <span class="category-chip category-chip--type">TYPE</span>
+                </div>
+                <h3>UNREADABLE WEATHER</h3>
+                <p lang="zh-CN">不可读天气</p>
+              </div>
+            </a>
+          </article>
+
+          <article
+            id="entry-a04"
+            class="archive-card"
+            data-category="image"
+            data-index="4"
+          >
+            <a class="archive-card__link" href="entries/a04-synthetic-fossils.html">
+              <div class="archive-card__image">
+                <img
+                  src="assets/images/covers/a04-cover.png"
+                  alt="透明树脂包裹骨状碎片和金属丝，置于红白背景上"
+                >
+              </div>
+              <div class="archive-card__body">
+                <div class="archive-card__topline">
+                  <span class="archive-card__id">A04</span>
+                  <span class="category-chip category-chip--image">IMAGE</span>
+                </div>
+                <h3>SYNTHETIC FOSSILS</h3>
+                <p lang="zh-CN">合成化石</p>
+              </div>
+            </a>
+          </article>
+
+          <article
+            id="entry-a05"
+            class="archive-card"
+            data-category="image"
+            data-index="5"
+          >
+            <a class="archive-card__link" href="entries/a05-soft-hardware.html">
+              <div class="archive-card__image">
+                <img
+                  src="assets/images/covers/a05-cover.png"
+                  alt="软胶、织物、透明管线和金属接头组成柔性机器"
+                >
+              </div>
+              <div class="archive-card__body">
+                <div class="archive-card__topline">
+                  <span class="archive-card__id">A05</span>
+                  <span class="category-chip category-chip--image">IMAGE</span>
+                </div>
+                <h3>SOFT HARDWARE</h3>
+                <p lang="zh-CN">柔软硬件</p>
+              </div>
+            </a>
+          </article>
+
+          <article
+            id="entry-a06"
+            class="archive-card"
+            data-category="image"
+            data-index="6"
+          >
+            <a class="archive-card__link" href="entries/a06-archive-of-accidents.html">
+              <div class="archive-card__image">
+                <img
+                  src="assets/images/covers/a06-cover.png"
+                  alt="失焦、遮挡和压缩错误的黑白照片组成档案拼贴"
+                >
+              </div>
+              <div class="archive-card__body">
+                <div class="archive-card__topline">
+                  <span class="archive-card__id">A06</span>
+                  <span class="category-chip category-chip--image">IMAGE</span>
+                </div>
+                <h3>ARCHIVE OF ACCIDENTS</h3>
+                <p lang="zh-CN">偶发档案</p>
+              </div>
+            </a>
+          </article>
+
+          <article
+            id="entry-a07"
+            class="archive-card"
+            data-category="system"
+            data-index="7"
+          >
+            <a class="archive-card__link" href="entries/a07-false-taxonomy.html">
+              <div class="archive-card__image">
+                <img
+                  src="assets/images/covers/a07-cover.png"
+                  alt="十二件浅色虚构标本按蓝色分类图表排列"
+                >
+              </div>
+              <div class="archive-card__body">
+                <div class="archive-card__topline">
+                  <span class="archive-card__id">A07</span>
+                  <span class="category-chip category-chip--system">SYSTEM</span>
+                </div>
+                <h3>FALSE TAXONOMY</h3>
+                <p lang="zh-CN">虚构分类学</p>
+              </div>
+            </a>
+          </article>
+
+          <article
+            id="entry-a08"
+            class="archive-card"
+            data-category="system"
+            data-index="8"
+          >
+            <a class="archive-card__link" href="entries/a08-signal-specimens.html">
+              <div class="archive-card__image">
+                <img
+                  src="assets/images/covers/a08-cover.png"
+                  alt="蓝色波形与噪点被封存在透明方片、圆片和长条中"
+                >
+              </div>
+              <div class="archive-card__body">
+                <div class="archive-card__topline">
+                  <span class="archive-card__id">A08</span>
+                  <span class="category-chip category-chip--system">SYSTEM</span>
+                </div>
+                <h3>SIGNAL SPECIMENS</h3>
+                <p lang="zh-CN">信号标本</p>
+              </div>
+            </a>
+          </article>
+
+          <article
+            id="entry-a09"
+            class="archive-card"
+            data-category="system"
+            data-index="9"
+          >
+            <a class="archive-card__link" href="entries/a09-interface-relics.html">
+              <div class="archive-card__image">
+                <img
+                  src="assets/images/covers/a09-cover.png"
+                  alt="透明窗口、按钮、游标和进度条组件排列在灰色背景上"
+                >
+              </div>
+              <div class="archive-card__body">
+                <div class="archive-card__topline">
+                  <span class="archive-card__id">A09</span>
+                  <span class="category-chip category-chip--system">SYSTEM</span>
+                </div>
+                <h3>INTERFACE RELICS</h3>
+                <p lang="zh-CN">界面遗物</p>
+              </div>
+            </a>
+          </article>
+
+          <article
+            id="entry-a10"
+            class="archive-card"
+            data-category="field-notes"
+            data-index="10"
+          >
+            <a class="archive-card__link" href="entries/a10-temporary-monument.html">
+              <div class="archive-card__image">
+                <img
+                  src="assets/images/covers/a10-cover.png"
+                  alt="脚手架、木箱和半透明薄膜组成纪念碑状临时结构"
+                >
+              </div>
+              <div class="archive-card__body">
+                <div class="archive-card__topline">
+                  <span class="archive-card__id">A10</span>
+                  <span class="category-chip category-chip--field">FIELD NOTES</span>
+                </div>
+                <h3>TEMPORARY MONUMENT</h3>
+                <p lang="zh-CN">临时纪念碑</p>
+              </div>
+            </a>
+          </article>
+
+          <article
+            id="entry-a11"
+            class="archive-card"
+            data-category="field-notes"
+            data-index="11"
+          >
+            <a class="archive-card__link" href="entries/a11-color-conflict-01.html">
+              <div class="archive-card__image">
+                <img
+                  src="assets/images/covers/a11-cover.png"
+                  alt="紫色、薄荷绿、橙色和粉色材料碎片围绕灰色墙面排列"
+                >
+              </div>
+              <div class="archive-card__body">
+                <div class="archive-card__topline">
+                  <span class="archive-card__id">A11</span>
+                  <span class="category-chip category-chip--field">FIELD NOTES</span>
+                </div>
+                <h3>COLOR CONFLICT 01</h3>
+                <p lang="zh-CN">色彩冲突 01</p>
+              </div>
+            </a>
+          </article>
+
+          <article
+            id="entry-a12"
+            class="archive-card"
+            data-category="field-notes"
+            data-index="12"
+          >
+            <a class="archive-card__link" href="entries/a12-unknown-rituals.html">
+              <div class="archive-card__image">
+                <img
+                  src="assets/images/covers/a12-cover.png"
+                  alt="布料、水杯、石块、枝叶和线绳按对称仪式结构摆放"
+                >
+              </div>
+              <div class="archive-card__body">
+                <div class="archive-card__topline">
+                  <span class="archive-card__id">A12</span>
+                  <span class="category-chip category-chip--field">FIELD NOTES</span>
+                </div>
+                <h3>UNKNOWN RITUALS</h3>
+                <p lang="zh-CN">未知仪式</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>PERSONAL VISUAL ARCHIVE</p>
+      <p>012 ENTRIES · 004 CATEGORIES · INDEX ORDER</p>
+      <p><a href="index.html">RETURN HOME ↑</a></p>
+    </footer>
+  </body>
+</html>
